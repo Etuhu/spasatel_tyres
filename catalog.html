@@ -12,6 +12,7 @@
 		<link href="css/jquery.mCustomScrollbar.min.css" media="screen" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/fancybox.css" />
+		<link rel="stylesheet" href="css/multiple-select.min.css" />
 		<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/style.css.map" media="screen" rel="stylesheet" type="text/css" />
 	</head>
@@ -107,36 +108,101 @@
 				<div class="catalog__wrapper">
 					<div class="container">
 						<div class="row catalog__wrapper-row">
-							<div class="col-xxl-2 col-lg-3 catalog__wrapper-filters">
+							<div class="col-lg-2 catalog__wrapper-filters">
 								<h3 class="filters-title">Steer tires</h3>
-								<div class="filters-item">
-									<div class="collapse-link-wrapper">
-										<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFilters-Width" role="button" aria-expanded="false" aria-controls="collapseFilters-Width">
-										  Width
-										</a>
+								<div class="filters-list filters-list--collapse d-lg-block d-none">
+									<div class="filters-item">
+										<div class="collapse-link-wrapper">
+											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersWidth" role="button" aria-expanded="true" aria-controls="collapseFiltersWidth">
+											Width
+											</a>
+										</div>
+										<div class="collapse show collapse-filters" id="collapseFiltersWidth">
+											<div class="content">
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>85</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox">
+													<span>87</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>90</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox">
+													<span>110</span>
+												</label>
+											</div>
+										</div>
 									</div>
-									<div class="collapse collapse-filters" id="collapseFilters-Width">
-										<label class="filter-checkbox">
-											<input type="checkbox" checked>
-											<span>85</span>
-										</label>
-										<label class="filter-checkbox">
-											<input type="checkbox">
-											<span>87</span>
-										</label>
-										<label class="filter-checkbox">
-											<input type="checkbox" checked>
-											<span>90</span>
-										</label>
-
-										<label class="filter-checkbox">
-											<input type="checkbox">
-											<span>110</span>
-										</label>
+									<div class="filters-item">
+										<div class="collapse-link-wrapper">
+											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersDiameter" role="button" aria-expanded="true" aria-controls="collapseFiltersDiameter">
+											Diameter
+											</a>
+										</div>
+										<div class="collapse show collapse-filters" id="collapseFiltersDiameter">
+											<div class="content">
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>22.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox">
+													<span>24.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>26.5</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="filters-item">
+										<div class="collapse-link-wrapper">
+											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersSize" role="button" aria-expanded="true" aria-controls="collapseFiltersSize">
+											Size
+											</a>
+										</div>
+										<div class="collapse show collapse-filters" id="collapseFiltersSize">
+											<div class="content">
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>11R22.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox">
+													<span>255/70R22.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>295/75R22.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox">
+													<span>11R24.5</span>
+												</label>
+												<label class="filter-checkbox">
+													<input type="checkbox" checked>
+													<span>285/75R24.5</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
+								<div class="filters-list filters-list--select d-lg-none d-flex">
+									<select multiple placeholder="Width" class="select-filters">
+										<option value="85">85</option>
+										<option value="87">87</option>
+										<option value="90">90</option>
+										<option value="110">110</option>
+									</select>
+								</div>
 							</div>
-							<div class="col-xxl-10 col-lg-9 catalog__wrapper-list">
+							<div class="col-lg-10 catalog__wrapper-list">
 								<div class="results-counter">Found 38 results</div>
 								<div class="row catalog__wrapper-list-row">
 									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item">
@@ -306,6 +372,7 @@
 		<script type="text/javascript" src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 		<script type="text/javascript" src="js/fancybox.umd.js"></script>
+		<script type="text/javascript" src="js/multiple-select.min.js"></script>
 		<script type="text/javascript" src="js/front.js"></script>
 	</body>
 </html>
