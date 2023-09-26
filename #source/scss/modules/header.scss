@@ -9,7 +9,6 @@
         }
         @media (max-width: 767px) {
             padding-top: 20px;
-            padding-bottom: 0;
         }
 	}
     .logo-wrapper {
@@ -45,6 +44,7 @@
             @media (max-width: 767px) {
                 margin-top: 5px;
                 margin-bottom: 5px;
+                text-align: right;
             }
 			> a {
 				color: $lightgray;

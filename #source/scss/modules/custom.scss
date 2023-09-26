@@ -120,6 +120,7 @@ a {
 
 .inner-page {
     flex-grow: 1;
+    position: relative;
     // padding-top: 80px;
     // padding-bottom: 50px;
     // @media (max-width: 1920px) {
@@ -245,6 +246,19 @@ a {
     }
     &:active {
         transition: 0.2s ease;
+    }
+    &--reverse {
+        &::after {
+            background-image: url(../img/white_arrow_left.svg);
+            right: unset;
+            left: 30%;
+        }
+        &:hover {
+            &::after {
+                right: unset;
+                left: 10%;
+            }
+        }
     }
     &--min {
         padding-right: 86px;

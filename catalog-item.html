@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Catalog</title>
+		<title>Catalog item</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
 		<link href="img/favicon.ico" rel="shortcut icon" />
@@ -68,189 +68,107 @@
 			</div>
 		</header>
 		<main class="inner-page">
-			<section class="catalog catalog--index">
-				<div class="catalog__categories">
-					<div class="container">
-						<div class="catalog__categories-wrapper">
-							<div class="catalog__categories-item" id="steer">
-								<picture>
-									<source srcset="img/cat_1_mobile.jpg" media="(max-width: 767px)" />
-									<source srcset="img/cat_1_tablet.jpg" media="(max-width: 991px)" />
-									<source srcset="img/cat_1.jpg" />
-									<img class="img-fluid" src="img/cat_1.jpg" width="600" height="390" />
-								</picture>
-								<div class="catalog__categories-fader"></div>
-								<h2 class="catalog__categories-title">Steer</h2>
-							</div>
-							<div class="catalog__categories-item" id="drive">
-								<picture>
-									<source srcset="img/cat_2_mobile.jpg" media="(max-width: 767px)" />
-									<source srcset="img/cat_2_tablet.jpg" media="(max-width: 991px)" />
-									<source srcset="img/cat_2.jpg" />
-									<img class="img-fluid" src="img/cat_2.jpg" width="600" height="390" />
-								</picture>
-								<div class="catalog__categories-fader"></div>
-								<h2 class="catalog__categories-title">Drive</h2>
-							</div>
-							<div class="catalog__categories-item" id="trailer">
-								<picture>
-									<source srcset="img/cat_3_mobile.jpg" media="(max-width: 767px)" />
-									<source srcset="img/cat_3_tablet.jpg" media="(max-width: 991px)" />
-									<source srcset="img/cat_3.jpg" />
-									<img class="img-fluid" src="img/cat_3.jpg" width="600" height="390" />
-								</picture>
-								<div class="catalog__categories-fader"></div>
-								<h2 class="catalog__categories-title">Trailer</h2>
-							</div>
-						</div>
+			<div class="catalog-item-page">
+				<div class="catalog-item-page__bg">
+					<div class="catalog-item-page__bg-image">
+						<div class="catalog-item-page__bg-fader"></div>
+						<img src="img/catalog-inner-bg.jpg" class="img-fluid">
 					</div>
 				</div>
-				<div class="catalog__wrapper">
-					<div class="container">
-						<div class="row catalog__wrapper-row">
-							<div class="col-lg-2 catalog__wrapper-filters">
-								<h3 class="filters-title">Steer tires</h3>
-								<div class="filters-list filters-list--collapse d-lg-block d-none">
-									<div class="filters-item">
-										<div class="collapse-link-wrapper">
-											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersWidth" role="button" aria-expanded="true" aria-controls="collapseFiltersWidth">
-											Width
-											</a>
-										</div>
-										<div class="collapse show collapse-filters" id="collapseFiltersWidth">
-											<div class="content">
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>85</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox">
-													<span>87</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>90</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox">
-													<span>110</span>
-												</label>
-											</div>
-										</div>
+				<div class="container catalog-item-page__container">
+					<div class="catalog-item-page__content">
+						<div class="catalog-item-page__header">
+							<div class="catalog-item-page__title">
+								<div class="catalog-item-page__type">
+									<div class="catalog-item-page__category">
+										TBR TIRE
 									</div>
-									<div class="filters-item">
-										<div class="collapse-link-wrapper">
-											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersDiameter" role="button" aria-expanded="true" aria-controls="collapseFiltersDiameter">
-											Diameter
-											</a>
-										</div>
-										<div class="collapse show collapse-filters" id="collapseFiltersDiameter">
-											<div class="content">
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>22.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox">
-													<span>24.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>26.5</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="filters-item">
-										<div class="collapse-link-wrapper">
-											<a class="collapse-link" data-bs-toggle="collapse" href="#collapseFiltersSize" role="button" aria-expanded="true" aria-controls="collapseFiltersSize">
-											Size
-											</a>
-										</div>
-										<div class="collapse show collapse-filters" id="collapseFiltersSize">
-											<div class="content">
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>11R22.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox">
-													<span>255/70R22.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>295/75R22.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox">
-													<span>11R24.5</span>
-												</label>
-												<label class="filter-checkbox">
-													<input type="checkbox" checked>
-													<span>285/75R24.5</span>
-												</label>
-											</div>
-										</div>
+									<div class="catalog-item-page__brand">
+										NAMA
 									</div>
 								</div>
-								<div class="filters-list filters-list--select d-lg-none d-flex">
-									<select multiple placeholder="Width" class="select-filters">
-										<option value="85">85</option>
-										<option value="87">87</option>
-										<option value="90">90</option>
-										<option value="110">110</option>
-									</select>
-									<select multiple placeholder="Diameter" class="select-filters">
-										<option value="22.5">22.5</option>
-										<option value="24.5">24.5</option>
-										<option value="26.5">26.5</option>
-									</select>
-									<select multiple placeholder="Size" class="select-filters">
-										<option value="11R22.5">11R22.5</option>
-										<option value="255/70R22.5">255/70R22.5</option>
-										<option value="295/75R22.5">295/75R22.5</option>
-										<option value="11R24.5">11R24.5</option>
-										<option value="285/75R24.5">285/75R24.5</option>
-									</select>
-								</div>
+								<h1 class="catalog-item-page__name basic-title">
+									NA58
+								</h1>
 							</div>
-							<div class="col-lg-10 catalog__wrapper-list">
-								<div class="results-counter">Found 38 results</div>
-								<div class="row catalog__wrapper-list-row">
-									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item">
-										<a href="catalog-item.html" class="stretched-link"></a>
-										<div class="content">
-											<img src="img/item_grp77.png" class="catalog__wrapper-item-image img-fluid" width="310" height="310" />
-											<h4 class="catalog__wrapper-item-title">Gripover GRP88</h4>
+							<a href="/catalog" class="basic-button basic-button--transparent basic-button--min basic-button--reverse">Continue shopping</a>
+						</div>
+						<div class="catalog-item-page__product">
+							<div class="row">
+								<div class="col-lg-6 catalog-item-page__product-image">
+									<img src="img/item_inner_sqr.png" class="img-fluid" width="800" height="800">
+								</div>
+								<div class="col-lg-6 catalog-item-page__product-info">
+									<div class="catalog-item-page__parameters">
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												Size
+											</div>
+											<div class="parameters-value">
+												295/75R22.5
+											</div>
+										</div>
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												LI/SS
+											</div>
+											<div class="parameters-value">
+												146/143 L
+											</div>
+										</div>
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												PR
+											</div>
+											<div class="parameters-value">
+												16
+											</div>
+										</div>
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												RIM
+											</div>
+											<div class="parameters-value">
+												8.25
+											</div>
+										</div>
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												Section width
+											</div>
+											<div class="parameters-value">
+												285
+											</div>
+										</div>
+										<div class="catalog-item-page__parameters-item">
+											<div class="parameters-name">
+												Overall diameter
+											</div>
+											<div class="parameters-value">
+												1032
+											</div>
 										</div>
 									</div>
-									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item catalog__wrapper-item--top">
-										<a href="catalog-item.html" class="stretched-link"></a>
-										<div class="content">
-											<span class="tag tag--top">Bestseller</span>
-											<img src="img/item_na58.png" class="catalog__wrapper-item-image img-fluid" width="310" height="310" />
-											<h4 class="catalog__wrapper-item-title">Gripover GRP77</h4>
-										</div>
+									<div class="catalog-item-page__description">
+										<p>Premium 5-lines tread design with wide shoulder offers reliability and durability.</p>
+										<p>Deep tread depth and optimized tread width increase mileage.</p>
+										<p>Specific sipes in ribs and shoulders provide good braking and strong grip in wet conditions.</p>
 									</div>
-									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item">
-										<a href="catalog-item.html" class="stretched-link"></a>
-										<div class="content">
-											<img src="img/item_grp77.png" class="catalog__wrapper-item-image img-fluid" width="310" height="310" />
-											<h4 class="catalog__wrapper-item-title">Nama NA58</h4>
+									<div class="catalog-item-page__buttons">
+										<div class="catalog-item-page__buttons-item catalog-item-page__buttons-item--buy">
+											<div class="add-counter">
+												<span class="change minus min">
+													<span>-</span>
+												</span>
+												<input type="text" name="productСount" value="1" disabled="">
+												<span class="change plus">
+													<span>+</span>
+												</span>
+											</div>
+											<a href="#" class="basic-button basic-button--min basic-button--transparent">Buy now</a>
 										</div>
-									</div>
-									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item">
-										<a href="catalog-item.html" class="stretched-link"></a>
-										<div class="content">
-											<img src="img/item_na58.png" class="catalog__wrapper-item-image img-fluid" width="310" height="310" />
-											<h4 class="catalog__wrapper-item-title">Gripover GRP88</h4>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-4 col-6 catalog__wrapper-item">
-										<a href="catalog-item.html" class="stretched-link"></a>
-										<div class="content">
-											<img src="img/item_grp77.png" class="catalog__wrapper-item-image img-fluid" width="310" height="310" />
-											<h4 class="catalog__wrapper-item-title">Gripover GRP77</h4>
+										<div class="catalog-item-page__buttons-item catalog-item-page__buttons-item--add">
+											<a href="#" class="basic-button basic-button--min basic-button--red">Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -258,59 +176,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="promo-slider">
-				<div class="swiper promo-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="pic">
-								<picture>
-									<source srcset="img/slide_1_m.jpg" media="(max-width: 575px)" />
-									<source srcset="img/slide_1_t.jpg" media="(max-width: 991px)" />
-									<source srcset="img/slide_1.jpg" />
-									<img class="img-fluid w-100" src="img/slide_1.jpg" />
-								</picture>
-							</div>
-							<div class="container caption">
-								<div class="caption-content">
-									<h2>Easy pay</h2>
-									<p>
-										Lorem ipsum dolor sit amet consectetur.
-										Dignissim pellentesque maecenas amet non amet ac velit augue.
-										Lorem ipsum dolor sit amet consectetur.
-										Dignissim pellentesque maecenas amet non amet ac velit augue.
-									</p>
-									<a href="#" class="basic-button basic-button--red">
-										<span>More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="pic">
-								<picture>
-									<source srcset="img/slide_2_m.jpg" media="(max-width: 575px)" />
-									<source srcset="img/slide_2_t.jpg" media="(max-width: 991px)" />
-									<source srcset="img/slide_2.jpg" />
-									<img class="img-fluid w-100" src="img/slide_2.jpg" />
-								</picture>
-							</div>
-							<div class="container caption">
-								<div class="caption-content">
-									<h2>Easy pay</h2>
-									<p>
-										Easy and fast payment for goods on our website.
-									</p>
-									<a href="#" class="basic-button basic-button--red">
-										<span>More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-pagination promo-swiper-pagination"></div>
-				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="footer-wrapper">
 			<div class="footer">

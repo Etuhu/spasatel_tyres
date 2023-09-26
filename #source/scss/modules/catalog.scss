@@ -118,46 +118,112 @@
 					background-size: 120%;
 					transition: 0.2s ease;
 				}
-
-				/* Focus */
-				.focused input[type="checkbox"] {
-					// box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-				}
-
-				/* Hover */
-				.filter-checkbox input[type="checkbox"]:hover {
-					filter: brightness(110%);
-				}
-
-				/* Active */
-				.filter-checkbox input[type="checkbox"]:active {
-					filter: brightness(80%);
-				}
-
-				/* Disabled */
-				.filter-checkbox input[type="checkbox"]:disabled {
-					color: #666;
-					cursor: default;
-				}
-				.filter-checkbox input[type="checkbox"]:disabled {
-					filter: grayscale(100%);
-					opacity: 0.6;
-				}
 			}
 		}
         .filters-list--select {
             flex-wrap: wrap;
             gap: 15px;
+			@media (max-width: 767px) {
+				gap: 10px;
+			}
         }
         .select-filters {
+			@media (max-width: 991px) {
+				min-width: 150px;
+				&.ms-parent-open {
+					.ms-choice {
+						background-color: #ACACAC;
+						transition: 0.2s ease;
+						> span {
+							color: $black;
+							transition: 0.2s ease;
+						}
+					}
+				}
+			}
+			@media (max-width: 767px) {
+				min-width: 120px;
+			}
             .ms-choice {
                 background-color: $black;
+				height: auto;
+				border-radius: 0;
+				line-height: 1;
+				transition: 0.2s ease;
             }
-            .ms-choice > span.placeholder {
+            // .ms-choice > span.placeholder {
+            //     color: $lightgray;
+            //     opacity: 1;
+            //     background-color: rgba(0, 0, 0, 0);
+			// 	font-family: "Oswald", sans-serif;
+			// 	padding: 5px 15px;
+			// 	position: unset;
+			// 	transition: 0.2s ease;
+            // }
+            .ms-choice > span {
                 color: $lightgray;
                 opacity: 1;
                 background-color: rgba(0, 0, 0, 0);
+				font-family: "Oswald", sans-serif;
+				padding: 8px 10px;
+				position: unset;
+				transition: 0.2s ease;
+				@media (max-width: 575px) {
+					font-size: 0.8rem;
+				}
             }
+			.ms-drop {
+				&.bottom {
+					background-color: #ACACAC;
+					border-radius: 0;
+				}
+				ul>li {
+					border-top: 1px solid $lightgray;
+				}
+				ul>li label {
+					padding-left: 0;
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					span {
+						font-size: 0.8rem;
+						color: $black;
+						@media (max-width: 575px) {
+							font-size: 0.7rem;
+						}
+					}
+				}
+				input[type="checkbox"] {
+					position: unset;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					display: inline-block;
+					width: 13px;
+					height: 13px;
+					margin: 0 5px 0 0;
+					padding: 0;
+					vertical-align: top;
+					border: 1px solid $black;
+					outline: none;
+					transition: 0.2s ease;
+					// background: url(../img/checkmark.png) 0 0 no-repeat;
+					cursor: pointer;
+					@media (max-width: 575px) {
+						width: 10px;
+						height: 10px;
+					}
+				}
+
+				/* Checked */
+				input[type="checkbox"]:checked {
+					background-color: $black;
+					background-image: url(../img/checkmark.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: 120%;
+					transition: 0.2s ease;
+				}
+			}
         }
         .placeholder {
             cursor: pointer !important;
@@ -175,6 +241,9 @@
 			margin-bottom: 1rem;
 			font-family: "Oswald", sans-serif;
 			opacity: 0.8;
+			@media (max-width: 991px) {
+				text-align: center;
+			}
 		}
 	}
 	.catalog__wrapper-item {
@@ -185,8 +254,14 @@
 			border-radius: 10px;
 			padding: 20px 20px 30px;
 			transition: 0.2s ease;
-			@media (max-width: 1699px) {
+			@media (max-width: 991px) {
 				padding: 10px 10px 20px;
+			}
+			@media (max-width: 1699px) {
+				padding: 10px;
+			}
+			@media (max-width: 575px) {
+				border-radius: 5px;
 			}
 			.tag {
 				position: absolute;
@@ -201,9 +276,23 @@
 				@media (max-width: 1699px) {
 					padding: 10px;
 				}
+				@media (max-width: 991px) {
+					padding: 5px 10px;
+				}
+				@media (max-width: 575px) {
+					font-size: 0.7rem;
+				}
 				&--top {
 					top: 20px;
 					left: 20px;
+					@media (max-width: 991px) {
+						top: 10px;
+						left: 10px;
+					}
+					@media (max-width: 575px) {
+						top: 5px;
+						left: 5px;
+					}
 				}
 			}
 		}
@@ -219,6 +308,9 @@
 			margin: 0 auto;
 			text-transform: uppercase;
 			font-size: 1rem;
+			@media (max-width: 991px) {
+				font-weight: 400;
+			}
 		}
 	}
 	.catalog__wrapper-item-image {
