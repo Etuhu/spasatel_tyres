@@ -1,0 +1,43 @@
+/*Стили для страницы О компании - начало*/
+.about-page {
+    h2, h3 {
+        font-size: 1.5rem;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    a {
+        color: $red;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    img {
+        margin-bottom: 1rem;
+    }
+    .about-page__header {
+        margin-bottom: 5rem;
+        @media (max-width: 767px) {
+            margin-bottom: 3rem;
+        }
+    }
+    .about-page__content {
+        margin-bottom: 5rem;
+        @media (max-width: 767px) {
+            margin-bottom: 3rem;
+        }
+    }
+    .about-page__content-wrapper {
+        @media (min-width: 768px) {
+            column-count: 2;
+            > img {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+    }
+    .about-page__bottom {
+
+    }
+}
+/*Стили для страницы О компании - конец*/

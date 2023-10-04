@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald-Regular.eot");
@@ -2077,14 +2078,6 @@ a {
     font-size: 3.3rem;
   }
 }
-@media (max-width: 991px) {
-  .blog .blog__item {
-    display: none;
-  }
-  .blog .blog__item:nth-child(1), .blog .blog__item:nth-child(2) {
-    display: block;
-  }
-}
 @media (max-width: 767px) {
   .blog .blog__item:not(:last-child) {
     margin-bottom: 30px;
@@ -2815,6 +2808,194 @@ a {
   padding-bottom: 3rem;
 }
 
+/*Стили для страницы О компании - начало*/
+.about-page h2, .about-page h3 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.about-page a {
+  color: #F00714;
+}
+.about-page a:hover {
+  opacity: 0.8;
+}
+.about-page img {
+  margin-bottom: 1rem;
+}
+.about-page .about-page__header {
+  margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  .about-page .about-page__header {
+    margin-bottom: 3rem;
+  }
+}
+.about-page .about-page__content {
+  margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  .about-page .about-page__content {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .about-page .about-page__content-wrapper {
+    column-count: 2;
+  }
+  .about-page .about-page__content-wrapper > img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+/*Стили для страницы О компании - конец*/
+/*Стили для страницы Бренды - начало*/
+.brands-page h1.basic-title {
+  margin-bottom: 2rem;
+}
+.brands-page .brands-page__header {
+  margin-bottom: 3rem;
+}
+
+.brands .brands__item .brands__item-site {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+.brands .brands__item .brands__item-site:hover {
+  text-decoration: underline;
+}
+.brands .brands__item .social {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  transition: 0.2s ease;
+}
+@media (max-width: 1599px) {
+  .brands .brands__item .social {
+    gap: 25px;
+  }
+}
+@media (max-width: 1399px) {
+  .brands .brands__item .social {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .brands .brands__item .social {
+    margin-bottom: 20px;
+  }
+}
+.brands .brands__item .social .social-item:hover {
+  opacity: 0.7;
+  transition: 0.2s ease;
+}
+@media (max-width: 1920px) {
+  .brands .brands__item .social .social-item img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 1599px) {
+  .brands .brands__item .social .social-item img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 1399px) {
+  .brands .brands__item .social .social-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*Стили для страницы Бренды - конец*/
+/*Стили для страницы Контакты - начало*/
+.contacts-page .contacts__info {
+  font-family: "Oswald", sans-serif;
+}
+@media (max-width: 1199px) {
+  .contacts-page .contacts__info {
+    margin-bottom: 2rem;
+  }
+}
+.contacts-page .contacts__info h2 {
+  margin-bottom: 2rem;
+}
+.contacts-page .contacts__info h3 {
+  color: #F00714;
+}
+.contacts-page .contacts__info p + h3 {
+  margin-top: 2rem;
+}
+.contacts-page .contacts__info a {
+  color: inherit;
+}
+.contacts-page .contacts__info a:hover {
+  opacity: 0.7;
+}
+.contacts-page .contacts__map iframe {
+  max-width: 100%;
+  aspect-ratio: 1330/730;
+}
+@media (max-width: 1920px) {
+  .contacts-page .contacts__map iframe {
+    height: auto;
+  }
+}
+
+/*Стили для страницы Контакты - конец*/
+/*Стили для страницы Блог - начало*/
+.blog .blog__item {
+  margin-bottom: 2rem;
+}
+
+/*Стили для страницы Блог - конец*/
+/*Стили для страницы 404 - начало*/
+.lost-page {
+  display: flex;
+}
+.lost-page > .container, .lost-page .lost-page-row {
+  height: 100%;
+}
+.lost-page .lost-page-row {
+  align-items: center;
+}
+.lost-page h1 {
+  font-size: 10rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+@media (max-width: 991px) {
+  .lost-page h1 {
+    margin-bottom: 1.5rem;
+    font-size: 8rem;
+  }
+}
+.lost-page h2 {
+  margin-bottom: 1.5rem;
+}
+.lost-page p {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 991px) {
+  .lost-page .lost-page-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.lost-page .lost-page-image {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .lost-page .lost-page-image img {
+    width: 70%;
+  }
+}
+
+/*Стили для страницы 404 - конец*/
 .footer-wrapper {
   padding-top: 3rem;
   padding-bottom: 2rem;

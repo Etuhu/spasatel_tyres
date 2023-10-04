@@ -1,0 +1,58 @@
+/*Стили для страницы Бренды - начало*/
+.brands-page {
+    h1.basic-title {
+        margin-bottom: 2rem;
+
+    }
+    .brands-page__header {
+        margin-bottom: 3rem;
+    }
+}
+.brands {
+    .brands__item {
+        .brands__item-site {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: inherit;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .social {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            transition: 0.2s ease;
+            @media (max-width: 1599px) {
+                gap: 25px;
+            }
+            @media (max-width: 1399px) {
+                gap: 20px;
+            }
+            @media (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+            .social-item {
+                &:hover {
+                    opacity: 0.7;
+                    transition: 0.2s ease;
+                }
+                img {
+                    @media (max-width: 1920px) {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    @media (max-width: 1599px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    @media (max-width: 1399px) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Стили для страницы Бренды - конец*/
